@@ -1,4 +1,46 @@
+
 <!DOCTYPE html>
+<style>
+:root {
+
+  /* Primary brand color */
+  --chat--color--primary: #4F8EF7;
+  --chat--color--primary-shade-50: #3e7ae0;
+  --chat--color--primary--shade-100: #2f66c7;
+
+  /* User message color */
+  --chat--color--secondary: #4F8EF7;
+
+  /* Backgrounds */
+  --chat--color-light: #f6f8fb;
+  --chat--color-light-shade-50: #eef1f7;
+
+  /* Header */
+  --chat--header--background: linear-gradient(135deg,#4F8EF7,#6EA8FE);
+  --chat--header--color: #ffffff;
+
+  /* Chat bubbles */
+  --chat--message--bot--background: #ffffff;
+  --chat--message--bot--color: #1f2a44;
+
+  --chat--message--user--background: #4F8EF7;
+  --chat--message--user--color: #ffffff;
+
+  /* Chat window */
+  --chat--window--border-radius: 16px;
+
+  /* Chat toggle bubble */
+  --chat--toggle--background: linear-gradient(135deg,#4F8EF7,#6EA8FE);
+}
+</style>
+.chat-window {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.chat-message {
+  border-radius: 14px;
+  max-width: 75%;
+}
 <html lang="en">
 
 <head>
@@ -52,7 +94,7 @@
     createChat({
       webhookUrl: 'https://sohamranmale.app.n8n.cloud/webhook/ffcf29b6-19e9-40fd-81a6-132910560043/chat',
       initialMessages: [
-        'Hi! 👋 I am the clinic assistant.',
+        "Hi! 👋 I'm the BrightSmile virtual assistant.",
         'I can help you book an appointment or answer questions.'
       ]
     });
